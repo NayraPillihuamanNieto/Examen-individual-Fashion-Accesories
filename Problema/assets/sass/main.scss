@@ -1,0 +1,111 @@
+
+body {
+	font-family: $Raleway;
+}
+img {
+	width: 100%;
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	font: bold 1.2em $Raleway;
+}
+p {
+	font-size: 0.86em;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#header {
+	background-color: $silver;
+	p {
+		padding-top: 10px;
+	}
+	.firstlink {
+		font-size: 0.8em;
+	}
+	#mainlogo {
+		background-color: $white;
+		padding: 3% 0;
+		.time {
+			font: bold 1.7em $Raleway;
+		}
+		img {
+			width: auto;
+		}
+		input {
+			border-radius: 0px;
+		}
+	}
+}
+
+#mainNav {
+	background-color: $silver;
+	.nav-tabs {
+		li {
+			a {
+				padding: 20px;
+				color: $black;
+				font: bold 1em $Raleway;
+			}
+			&.active a{
+				@include radius(0px);
+				background-color: $pink;
+				border: none;
+				color: $white;
+				padding: 20px;
+			}
+		}
+	}
+}
+
+#banner, #bestitems, #clients, #moreitems, #blog {
+	padding: 5% 0;
+}
+
+.bgblack{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#clients {
+	background: url('../images/client-bg.jpg') 12% 30% fixed;
+}
+
+#media2 img {
+	width: auto;
+	height: auto;
+}
+.contactbanner {
+	background: url('../images/contact.jpg') 0 100% fixed;
+	color: $white;
+}
+footer {
+	.footerlist {
+		background-color: $silver;
+		.social-media a {
+			@include social();
+		}
+		ul li {
+			line-height: 2em;
+			a {
+				color: darken($silver, 70);
+				font-size: 0.6em;
+			}
+		}
+	}
+	.footer {
+		background-color: darken($silver, 70);
+		color: white;
+		padding: 2% 0;
+		p {
+			font-size: 0.8em;
+		}
+		img {
+			width: auto;
+		}
+	}
+}

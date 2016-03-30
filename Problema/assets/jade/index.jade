@@ -1,0 +1,436 @@
+doctype
+html
+  head
+    title Fashion Accesosries
+    meta( charset='utf-8')
+    meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+    meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="icon" type="image/png" href="http://venezuela.bienesonline.com/img/sobre.png")
+    link(rel="stylesheet" href="assets/css/bootstrap.min.css")
+    link(rel="stylesheet" href="assets/css/bootstrap.css")
+    link(rel="stylesheet" href="assets/css/main.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway' type='text/css')
+
+
+ body
+    div.carrusel
+        h1.titulo AUTUMN/WINTER LOOKBOOK
+        p.texto 2016 COLLECTION
+    div.foto1
+        img.photo(src="assets/images/a1.jpg")
+     div.foto2
+        img.photo(src="assets/images/b1.jpg")
+    div.foto3
+        img.photo(src="assets/images/c1.jpg")
+    div.foto4
+        img.photo(src="assets/images/d1.jpg")
+     div.imagen1
+        img(src="assets/images/a2.jpg")
+    div.imagen2
+        img(src="assets/images/d2.jpg")
+    div.imagen3
+        img(src="assets/images/g2.jpg")
+     div.imagen4
+        img(src="assets/images/c2.jpg")
+    div.imagen5
+        img(src="assets/images/cart-1.jpg")
+    div.imagen6
+        img(src="assets/images/e1.jpg")
+    div.deliver
+        h6 Deliver Wide
+    div.estrellas
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-o
+        i.fa.fa-star-o
+     div.precio1
+        small $242.00
+        small $218.00
+    div.precio2
+        small $218.00
+   div.coffe
+        img(src="assets/images/blog2.jpg")
+    div.escritura
+        h5 THE SAMPLE HEADING TITLE
+        small 21/11/2015
+        p Lorem ipsum dolor sit amet,consectetur adipisic ing elit,sed,do...
+        small Read more...
+    header
+            nav.navbar.navbar-default.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                            span.sr-only Toggle Navigation
+                            span.icon-bar
+                            .span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="#") Default Welcome Msg!
+                    #navbar.navbar-collapse.collapse
+                        ul.nav.navbar-nav.nav-before 
+                            li
+                              a(href="#") Language
+                            li
+                              a(href="#") $Currrency
+                            li
+                              a(href='#')
+                                i.fa.fa-user
+                                | My Account
+
+    section.opening
+        .container
+            .row
+                .col-md-4
+                    i.fa.fa-clock-o
+                    h4 OPENING TIME
+                    small 9:00AM -10:00PM
+                .col-md-4
+                    img(src="assets/images/logo.png")
+                .col-md-4
+                .buscador
+                  form
+                    input.search(type='buscar', placeholder='Search')
+                    i.fa.fa-search
+    section.navegacion
+        nav.navbar.navbar-default
+                .container
+                    .navbar-header
+                        ul.nav.navbar-nav.nav-before 
+                            li
+                                a(href="#") HOME
+                            li
+                                a(href="#") CONTACT US
+                    #navbar.navbar-collapse.collapse
+                      a.navbar-brand.navbar-right(href="#")i.fa.fa-shopping-cart My Cart
+
+                        
+    section#background.slider
+        .container-fluid.without
+            .bs-example
+                #myCarousel.carousel.slide(data-interval='3000', data-ride='carousel')
+                    ol.carousel-indicators
+                      li.active(data-target='#myCarousel', data-slide-to='0')
+                      li(data-target='#myCarousel', data-slide-to='1')
+                    .first.carousel-inner
+                      .active.item.backgirls
+                        .carousel-caption
+                          +carrusel
+                      .item.backgirls2
+                        .carousel-caption
+                          +carrusel
+                            | Pallentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    a.carousel-control.left(href='#myCarousel', data-slide='prev')
+                    a.carousel-control.right(href='#myCarousel', data-slide='next')
+    section.opening
+        .container
+            .row
+                .col-md-5
+                    img(src="assets/images/banner1.jpg")
+                .col-md-7
+                    img(src="assets/images/banner2.jpg")
+    section.pagi
+        .container
+            ul
+             li.i.fa.fa-angle-left
+             li Latest
+             li Betseller 
+             li Sale  
+             li.i.fa.fa-angle-right
+    section.imagenes
+      .container
+        .row
+          .col-md-10
+            #scroller.carousel.slide
+              .second.carousel-inner
+                .item.active
+                  .row
+                    .col-xs-3
+                      .item
+                        .item-inner
+                          .thumbnail
+                            +foto1
+                            +deliver
+                            +estrellas
+                            +texto2
+                    .col-xs-3
+                      .item
+                        .item-inner
+                          .thumbnail
+                            +foto2
+                            +deliver
+                            +estrellas
+                            +texto1
+                    .col-xs-3
+                      .item
+                        .inner
+                          .thumbnail
+                            +foto3
+                            +deliver
+                            +estrellas
+                            +texto1
+                    .col-xs-3
+                      .item
+                        .inner
+                          .thumbnail
+                            +foto4
+                            +deliver
+                            +estrellas
+                            +texto2
+                .item
+                  .row
+                    .col-xs-3
+                      .item
+                        .item-inner
+                          .thumbnail
+                            +foto4
+                            +deliver
+                            +estrellas
+                            +texto2
+                    .col-xs-3
+                      .item
+                        .item-inner
+                          .thumbnail
+                            +foto3
+                            +deliver
+                            +estrellas
+                            +texto1
+                    .col-xs-3
+                      .item
+                        .inner
+                          .thumbnail
+                            +foto2
+                            +deliver
+                            +estrellas
+                            +texto2
+                    .col-xs-3
+                      .item
+                        .inner
+                          .thumbnail
+                            +foto1
+                            +deliver
+                            +estrellas
+                            +texto1
+          .col-md-2
+            .btn-group
+              a.btn.btn-danger(href='#scroller', data-slide='next')
+                i.fa.fa-angle-up
+    section.clients
+        .container
+            .row
+                .col-md-2
+                    img(src="assets/images/client1.jpg")
+                .col-md-2
+                    img(src="assets/images/client2.jpg")
+                .col-md-2
+                    img(src="assets/images/client3.jpg")
+                .col-md-2
+                    img(src="assets/images/client4.jpg")
+                .col-md-2
+                    img(src="assets/images/client5.jpg")
+                .col-md-2
+                    img(src="assets/images/client6.jpg")
+    section.pagi
+        .container
+            ul
+             li.i.fa.fa-angle-left
+             li Clothing
+             li Equipments 
+             li Jewellery  
+             li.i.fa.fa-angle-right
+    section.clothing
+        .container
+            .row
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen1
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio1
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen2
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio2
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen3
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio2
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+            .row
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen4
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio2
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen5
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio1
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+                .col-md-4
+                    .col-xs-8
+                        .bordes
+                            +imagen6
+                    .col-xs-4
+                        +deliver
+                        +estrellas
+                        +precio2
+                        a.page-scroll.btn.btn-xl( href="#" )
+                            i.fa.fa-shopping-cart
+                            | Add to Cart
+    section.pagi
+        .container
+            ul
+             li.i.fa.fa-angle-left
+             li Blog 
+             li.i.fa.fa-angle-right
+    section.blog
+        .container
+            .row
+                .col-md-3
+                    +coffe
+                    +escritura
+                .col-md-3
+                    img.photo(src="assets/images/blog1.jpg")
+                    +escritura
+                .col-md-3
+                    +coffe
+                    +escritura
+                .col-md-3
+                    img.photo(src="assets/images/blog3.jpg")
+                    +escritura
+    section.order
+        .container
+            .row
+               .col-md-4
+                    .box
+                     i.fa.fa-phone-square
+                     h5 | ORDER ONLINE NOW
+                     small Call Us:(0123)456 789
+               .col-md-4
+                    .box
+                     i.fa.fa-plane
+                     h5 | FREE WORLDWIDE SHIPPING
+                     small On Order Over $100
+                .col-md-4
+                    .box
+                     i.fa.fa-money
+                     h5 | 30 DAYS MONEY BACK 100%
+                     small Satisfaction Guarantee
+    section.accesories
+        .container
+          .row
+            .col-md-3
+                h4 Accesories
+                p
+                  |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo deleniti sunt veritatis doloribus odit suscipit, labore sequi quam excepturi minus, laboriosam. Excepturi, veritatis iusto. Obcaecati eligendi dolores, repudiandae cupiditate sunt.
+            .col-md-2
+                h5 MY ACCOUNT
+                div
+                  ul
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | My Account
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Order History
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Wish List
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Newsletter
+            .col-md-2
+                h5 INFORMATION
+                div
+                  ul
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | About Us
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Delivery information
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Privacy Policy
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Terms & Conditions
+            .col-md-2
+                h5 EXTRAS
+                div
+                  ul
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Brands
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Gift Vouchers
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Affiliates
+                    li
+                        a( href="#" )
+                          .i.fa.fa-angle-right
+                          | Specials
+            .col-md-3
+                h5 ABOUT US
+                p 8901 Marmora Roa,Glasgow D0489 GR.New York
+                p (0123)456789
+                p (0987)654321
+                p admin@bootexperts.com
+     footer
+        div.container
+            div.row
+                div.col-md-9
+                    h5 Copyright Ⓒ 2016 
+                     a(href="#") BootExperts 
+                     |All rights reserved. 
+                div.col-md-3
+                    img(src="assets/images/payment.png")
+script(src="js/jquery.js")
+script(src="js/bootstrap.min.js")
+script(src="js/cbpAnimated.js")
+	
